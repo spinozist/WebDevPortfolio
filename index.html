@@ -12,6 +12,8 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -21,19 +23,19 @@
 </head>
 
 <body>
-    <span>
-        <h2>Web Development by</h2>
-        <h1>Erik Woodworth</h1>
-    </span>
+    <div id="banner" class="container valign-wrapper">
+        <!-- <h3 id="header-title">Web Development by</h3><br> -->
+        <p id="header-name">Erik Woodworth</p>
+    </div>
     <div class="container">
         <ul class="collapsible popout">
             <li id="landing-div" class="active">
                 <div class="collapsible-header #cfd8dc blue-grey lighten-4">
-                    <h4>Technologies</h4>
+                    <h4>Languages & Frameworks</h4>
                 </div>
                 <div class="collapsible-body">
                     <div class="row">
-                        <div class="card col m6 offset-m3 l4 offset-l1 #cfd8dc blue-grey lighten-4 center">
+                        <div class="card col m6 offset-m3 l4 offset-l1 #cfd8dc blue-grey lighten-4 z-depth-2">
                             <div class="card-content">
                                 <span class="card-title">Front End:</span>
                                 <div>
@@ -41,7 +43,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card col m6 offset-m3 l4 offset-l1 #cfd8dc blue-grey lighten-4 center">
+                        <div class="card col m6 offset-m3 l4 offset-l1 #cfd8dc blue-grey lighten-4 z-depth-2">
                             <div class="card-content">
                                 <span class="card-title">Frameworks:</span>
                                 <div>
@@ -65,7 +67,7 @@
                 </div>
                 <div id="game-box" class="collapsible-body">
                     <div class="row">
-                        <div class="card col m3 s6 #cfd8dc blue-grey lighten-4 z-depth-3">
+                        <div class="card col m3 s6 #cfd8dc blue-grey lighten-4 z-depth-2">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="assets/images/hangman_image.png">
                             </div>
@@ -73,12 +75,38 @@
                                 <span class="card-title activator grey-text text-darken-4">Search for Meaning</span>
                             </div>
                             <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Search for Meaning<i class="material-icons right">close</i></span><br>
-                                <p>This is a simple word guess game. This game represents my first attempt at using
-                                    JavaScript.</p>
+                                <span class="card-title grey-text text-darken-4"><i class="material-icons center">close</i><br>Search
+                                    for Meaning</span>
+                                <p>This simple word guess game represents my first attempt at writing JavaScript.</p>
                                 <p><a href=#>This is a link</a></p>
                             </div>
                         </div>
+                        <div class="card col m3 s6 offset-m1 #cfd8dc blue-grey lighten-4 z-depth-2">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="assets/images/trivia_image.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Witch Hunt</span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><i class="material-icons center">close</i><br>Witch Hunt</span>
+                                <p>This trivia game is single-page web application, incorporating a timer, button hover effects, and a bit of dark humor.</p>
+                                <p><a href=#>This is a link</a></p>
+                            </div>
+                        </div>
+                        <div class="card col m3 s6 offset-m1 #cfd8dc blue-grey lighten-4 z-depth-2">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="assets/images/hangman_image.png">
+                                </div>
+                                <div class="card-content">
+                                    <span class="card-title activator grey-text text-darken-4">Search for Meaning</span>
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4"><i class="material-icons center">close</i><br>Search for Meaning</span>
+                                    <p>This simple word guess game represents my first attempt at writing JavaScript.</p>
+                                    <p><a href=#>This is a link</a></p>
+                                </div>
+                            </div>
                     </div>
 
                 </div>
