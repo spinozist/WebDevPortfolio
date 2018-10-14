@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    background-image: url(images/backgroundimage.png);
+    background-attachment: fixed;
+}
+
+.collapsible {
+    margin: 0;
+    border: none;
+}
+
+/* #game-box > img {
+    border-radius: 50%;
+} */
+
+img {
+    width: 100%;
+    margin-top: 1em;
+}
+
+/* li.active {
+    height: 80vh;
+    margin-bottom: 0;
+} */
+
+.collapsible-body {
+    border: none;
+    background-color: rgb(223, 223, 223);
+}
+
+.col {
+    background-color: white;
+}
+
+#materialize-logo {
+    margin: 20px;
+}
+
+h1,
+h2 {
+    color: white;
+    line-height: .5em;
+}
+
+h1{
+    font-size: 8em;
+    line-height: 1em;
+}
+
+.page-footer {
+    margin-top: 1em;
+    padding: 0;
+}
+
+p {
+    text-align: left;
+}
