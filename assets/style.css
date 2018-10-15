@@ -4,27 +4,14 @@ body {
     background-attachment: fixed;
 }
 
-/* #header-title {
-    font-family: 'Orbitron', sans-serif;
-}
-
-#header-name {
-    font-family: 'Audiowide', cursive;
-
-} */
-
 .collapsible {
     margin: 0;
     border: none;
 }
 
-/* #game-box > img {
-    border-radius: 50%;
-} */
-
 img {
     width: 100%;
-    margin-top: 1em;
+    /* margin-top: 1em; */
 }
 
 h4 {
@@ -32,18 +19,13 @@ h4 {
 
 }
 
-/* li.active {
-    height: 80vh;
-    margin-bottom: 0;
-} */
-
 .collapsible-body {
     border: none;
     background-color: rgb(223, 223, 223);
 }
 
 .col {
-    background-color: white;
+    background-color: transparent;
 }
 
 h4 {
@@ -55,15 +37,24 @@ h4 {
 }
 
 h1,
-h2 {
-    color: white;
+h2,
+h3 {
+    color: whitesmoke;
     line-height: 1em;
 }
 
 #header-name {
     font-size: 8em;
     color: whitesmoke;
-    /* line-height: 1em; */
+    line-height: 1em;
+    margin: 0;
+    background-color: black;
+}
+
+#header-title {
+    color: whitesmoke;
+    background-color: black;
+    padding: .2em;
 }
 
 .page-footer {
@@ -76,5 +67,9 @@ p {
 }
 
 #banner {
-    height: 40vh;
+    height: 35vh;
 }
+
+
+
+
