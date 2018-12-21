@@ -2,7 +2,7 @@ $(document).ready(function () {
     // $('.parallax').parallax();
     $(`.collapsible`).collapsible();
 
-    var AppCard = [
+    const AppCards = [
         {
             Title : "Search for Meaning",
             URL : "../Word-Guess-Game/",
@@ -36,39 +36,45 @@ $(document).ready(function () {
         {
             Title : "Friend Finder",
             URL : "https://friendfinder-by-erik.herokuapp.com/",
-            Info : "Built using NodeJS's Expess npm for sever-side API and HTML routing, this application pairs a user with a previous user based on survey response similarities.",
-            Image : "info_image.jpeg",
+            Info : "Built using Expess npm and custom ORMs for sever-side API and HTML routing, this application pairs a user with a previous user based on survey response similarities.",
+            Image : "friend-finder.png",
+        },
+        {
+            Title : "Community Art Curator",
+            URL : "https://art-curator.herokuapp.com/",
+            Info : "This application allows the user to view and update an interactive map of public art in their community.",
+            Image : "art-curator.png"
         }
     ];
 
-    var rowDiv = $(`<div>`);
+    const rowDiv = $(`<div>`);
     rowDiv.attr(`class`,`row`);
 
-    for (i = 0; i < AppCard.length; i++) {  
+    AppCards.reverse().forEach(AppCard => {  
 
         var colDiv = $(`<div>`);
         colDiv.attr(`class`, `col m6 s12 l4`)
             .append(`
             <div class="card #cfd8dc blue-grey lighten-4 z-depth-2">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="assets/images/${AppCard[i].Image}">
+                    <img class="activator" src="assets/images/${AppCard.Image}">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">
-                        ${AppCard[i].Title}
+                        ${AppCard.Title}
                     </span>
                 </div>
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4"><i class="material-icons center">close</i><br>${AppCard[i].Title}</span>
-                    <p>${AppCard[i].Info}</p>
-                    <a href="${AppCard[i].URL}" target="_blank"><i class="material-icons center">
+                    <span class="card-title grey-text text-darken-4"><i class="material-icons center">close</i><br>${AppCard.Title}</span>
+                    <p>${AppCard.Info}</p>
+                    <a href="${AppCard.URL}" target="_blank"><i class="material-icons center">
                             arrow_forward_ios
                             </i></a>                                  
                 </div>
             </div>
             `);
         rowDiv.append(colDiv);
-    };
+    });
 
     $(`#portfolio-cards`).append(rowDiv);
 });
