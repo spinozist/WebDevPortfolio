@@ -44,6 +44,12 @@ $(document).ready(function () {
             URL : "https://art-curator.herokuapp.com/",
             Info : "This application allows the user to view and update an interactive map of public art in their community.",
             Image : "art-curator.png"
+        },
+        {
+            Title : "News Scraper & Note Taker",
+            URL : "https://nyt-scraper-notes.herokuapp.com/",
+            Info : "Scrape New York Time front page and share notes on the articles.",
+            Image : "newsscraper.png"
         }
     ];
 
